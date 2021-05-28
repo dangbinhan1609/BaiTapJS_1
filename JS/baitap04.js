@@ -8,7 +8,7 @@ document.getElementById("btnDienTich").onclick = function () {
 document.getElementById("btnChuVi").onclick = function () {
     var chieudai = document.getElementById("chieudai").value;
     var chieurong = document.getElementById("chieurong").value;
-    var chuviHCN = (parseInt(chieudai) + parseInt(chieurong)) * 2;
+    var chuviHCN = (Number(chieudai) + Number(chieurong)) * 2;
     console.log("Chu vi HCN là: " + chuviHCN);
     document.getElementById("divShowInfo4").innerHTML = "Chu vi HCN là: " + chuviHCN;
 };
